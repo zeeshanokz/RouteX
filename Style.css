@@ -4,10 +4,11 @@
     box-sizing: border-box;
 }
 
+/* ==================== BASE STYLES ONLY ==================== */
+
 .navbar {
     display: flex;
     justify-content: space-between;
-    margin: 15px;
 }
 
 .navbar-list {
@@ -20,7 +21,7 @@
 }
 
 .navbar-list li {
-    padding:2px 16px; 
+    padding: 2px 16px; 
     border: 2px solid transparent;  
     border-radius: 12px;
     cursor: pointer;
@@ -31,38 +32,28 @@
 .navbar-list li:hover {
     background-color: #83CD20;
 }
+
 .home {
     background-color: #034833;
     color: azure;
     text-align: center;
-    padding: 128px 20px;
 }
 
 .home-heading {
-    margin-bottom: 25px;
-    font-size: xx-large;
     font-weight: bold;
 }
 
-.home-heading>h2 {
+.home-heading > h2 {
     margin-bottom: 10px;
 }
 
-/* .home-heading>pre {
-    padding: 20px;
-    font-weight: bold;
-} */
-
 pre {
-    padding: 10px;
     font-size: large;
 }
 
 .home-btn button {
-    margin-top: 20px;
     font-size: large;
     font-weight: bolder;
-    padding: 10px 20px;     
     border: 2px solid;    
     border-radius: 12px;          
     background-color: #83CD20; 
@@ -73,18 +64,12 @@ pre {
 
 .about-container {
     display: grid;
-    grid-template-columns: 1fr 2fr; 
-    gap: 30px;                       
-    padding: 50px;
     background-color: #fff;
     border-radius: 12px;
-    max-width: 1000px;
-    margin: 50px auto;
 }
 
 .about-left {
     display: grid;
-    grid-template-columns: 1fr 1fr; 
     gap: 15px;
 }
 
@@ -98,23 +83,18 @@ pre {
 }
 
 .about-right h6 {
-    font-size: 1rem;
     color: #83CD20;
-    margin-bottom: 10px;
 }
 
 .about-right h2 {
     margin: 10px 0;
-    font-size: 2rem;
 }
 
 .about-right p {
-    margin: 20px 0;
     line-height: 1.5;
 }
 
 .about-right button {
-    padding: 10px 20px;
     border-radius: 12px;
     border: 2px solid #83CD20;
     background-color: transparent;
@@ -128,57 +108,118 @@ pre {
     color: #034833;
 }
 
-@media (max-width: 768px) {
-    .about-container {
-        grid-template-columns: 1fr;
-    }
-
-    .about-left {
-        grid-template-columns: 1fr 1fr;
-    }
+.services {
+    background-color: #f4f4f4;
+    text-align: center;
 }
 
-/* Mobile responsiveness */
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        align-items: center;
-        margin: 10px;
-    }
-
-    .navbar-list {
-        flex-direction: column;
-        gap: 12px;
-        padding: 5px;
-    }
-
-    .home {
-        padding: 64px 20px;
-    }
-
-    .home-heading {
-        font-size: large;
-    }
-
-    pre {
-        font-size: medium;
-    }
-
-    .home-btn button {
-        padding: 8px 16px;
-        font-size: medium;
-    }
-
-    .about-container {
-        padding: 30px 20px;
-        margin: 30px 20px;
-    }
-
-    .about-right h2 {
-        font-size: 1.5rem;
-    }
-
-    .about-right p {
-        margin: 15px 0;
-    }
+.services h2 span {
+    color: #83CD20;
 }
+
+.cards {
+    display: grid;
+    justify-items: center;
+}
+
+.card {
+    background-color: #034833;
+    color: #fff;
+    border-radius: 12px;
+    text-align: center;
+    position: relative;
+}
+
+.card i {
+    color: #83CD20;
+}
+
+.card p {
+    line-height: 1.5;
+}
+
+.last {
+    background-color: #83CD20;
+    color: #034833;
+}
+
+.arrows {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.arrows i {
+    background-color: #fff;
+    color: #034833;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.stats {
+    background-color: #fff;
+}
+
+.stats-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stats-left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.stats-left video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.stats-right {
+    display: grid;
+}
+
+.stat-box {
+    background-color: #034833;
+    color: #fff;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.stat-box i {
+    color: #83CD20;
+}
+
+.stat-box span {
+    font-weight: bold;
+    display: block;
+}
+
+#company-name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#company-name span {
+    background-color: #034833;
+    color: #fff;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+

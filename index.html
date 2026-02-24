@@ -8,19 +8,20 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 <link rel="icon" href="images/favicon-32x32.png" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
     <header>
-        <nav class="navbar">
-            <div>
+        <nav class="navbar flex justify-between items-center py-4 md:py-5 lg:py-6 px-4 md:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center gap-2">
             <span></span>
-            <h1>
+            <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold">
               <i class="fas fa-plane-departure" style="color: #83CD20;"></i>
                 Route<span>X</span></h1>
             </div>
-           <div>
-            <ul class="navbar-list">
+           <div class="hidden md:flex">
+            <ul class="navbar-list flex flex-col md:flex-row gap-2 md:gap-6 lg:gap-8">
               <li id="home">Home</li>
               <li id="about">About Us</li>
               <li id="service">Services</li>
@@ -30,7 +31,7 @@
            </div>
            <div>
             <a href="#">
-                <button>
+                <button class="chat-btn px-3 md:px-4 lg:px-5 py-2 md:py-2 lg:py-2 text-xs md:text-sm lg:text-base">
                  <i class="fas fa-comment-dots"></i>
               + 92 30012456789
             </button></a>
@@ -39,20 +40,20 @@
     </header>
 
     <div>
-        <section class="home">
+        <section class="home py-12 md:py-20 lg:py-32 px-4 md:px-6 lg:px-8">
             <main>
                 <article>
-                    <div class="home-heading">
-                    <h2>Journey With Confidence</h2>
+                    <div class="home-heading mb-4 md:mb-6 lg:mb-8 text-xl md:text-3xl lg:text-5xl">
+                    <h2 class="mb-2 md:mb-3 lg:mb-4">Journey With Confidence</h2>
                     <h3><span style="color: #83CD20;">Migrate</span> With Us</h3>
                     </div>
-                    <div>      
-                   <pre>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, at?</pre>
-                    <pre>Lorem ipsum dolor sit, amet consectetur adipisicing.</pre>
+                    <div class="px-2 md:px-4 lg:px-6">      
+                   <pre class="text-xs md:text-base lg:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, at?</pre>
+                    <pre class="text-xs md:text-base lg:text-lg">Lorem ipsum dolor sit, amet consectetur adipisicing.</pre>
                     </div>
                  
-                    <div class="home-btn">
-                      <a href="#"><button>Learn More
+                    <div class="home-btn mt-4 md:mt-6 lg:mt-8">
+                      <a href="#"><button class="px-4 md:px-5 lg:px-6 py-2 md:py-2.5 lg:py-3 text-sm md:text-base lg:text-lg">Learn More
                      <i class="fas fa-arrow-right"></i>
                     </button></a>
                     </div>
@@ -62,28 +63,90 @@
     </div>
 
     <div>
-            
-     <section class="about-container">
-  <div class="about-left">
-    <div class="box">Safety Guides</div>
-    <div class="box">Passport Assistance</div>
-    <div class="box">Travel Tips</div>
-    <div class="box">Customer Support</div>
+     <section class="about-container grid grid-cols-1 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-10 p-6 md:p-10 lg:p-12 mx-auto my-8 md:my-10 lg:my-12 max-w-4xl lg:max-w-6xl">
+  <div class="about-left grid grid-cols-2 gap-3 md:gap-4 lg:col-span-1">
+    <div class="box px-3 md:px-4 py-3 md:py-4 text-xs md:text-sm">Safety Guides</div>
+    <div class="box px-3 md:px-4 py-3 md:py-4 text-xs md:text-sm">Passport Assistance</div>
+    <div class="box px-3 md:px-4 py-3 md:py-4 text-xs md:text-sm">Travel Tips</div>
+    <div class="box px-3 md:px-4 py-3 md:py-4 text-xs md:text-sm">Customer Support</div>
   </div>
 
-  <div class="about-right">
-    <h6>About Us</h6>
-    <h2>UnKnown WanderLust</h2>
-    <h2>Your Journey Into</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis odit nobis numquam optio?</p>
+  <div class="about-right lg:col-span-2">
+    <h6 class="text-xs md:text-sm lg:text-base mb-2 md:mb-3">About Us</h6>
+    <h2 class="text-xl md:text-2xl lg:text-3xl mb-2 md:mb-3">UnKnown WanderLust</h2>
+    <h2 class="text-xl md:text-2xl lg:text-3xl mb-3 md:mb-4 lg:mb-5">Your Journey Into</h2>
+    <p class="text-xs md:text-sm lg:text-base mb-4 md:mb-5 lg:mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis odit nobis numquam optio?</p>
 
     <a href="#">
-      <button>
+      <button class="px-3 md:px-4 lg:px-5 py-2 md:py-2.5 lg:py-3 text-xs md:text-sm lg:text-base">
         Read More <i class="fas fa-arrow-right" style="color: black;"></i>
       </button>
     </a>
   </div>
 </section>
+    </div>
+
+    <section class="services py-8 md:py-12 lg:py-16 px-4 md:px-6 lg:px-8">
+        <h2 class="text-2xl md:text-3xl lg:text-4xl mb-6 md:mb-8 lg:mb-10">Our <span>Services</span></h2>
+        <div class="cards grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-10 place-items-center">
+            <div class="card w-full md:w-80 lg:w-96 px-5 md:px-6 lg:px-8 py-6 md:py-7 lg:py-8">
+                <i class="fas fa-plane text-2xl md:text-3xl lg:text-4xl mb-3 md:mb-4"></i>
+                <h3 class="text-lg md:text-xl lg:text-2xl mb-2 md:mb-3">Air Travel</h3>
+                <p class="text-xs md:text-sm lg:text-base">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque iste maxime, ex dignissimos deserunt nobis id alias hic aspernatur, perferendis, pariatur molestiae.</p>
             </div>
+            <div class="card w-full md:w-80 lg:w-96 px-5 md:px-6 lg:px-8 py-6 md:py-7 lg:py-8">
+                <i class="fas fa-passport text-2xl md:text-3xl lg:text-4xl mb-3 md:mb-4"></i>
+                <h3 class="text-lg md:text-xl lg:text-2xl mb-2 md:mb-3">Visa Assistance</h3>
+                <p class="text-xs md:text-sm lg:text-base">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum optio, explicabo totam aperiam, aut nam officiis aliquid, corporis nisi aliquam a perferendis cumque. Reprehenderit, sunt.</p>
+            </div>
+            <div class="card last w-full md:w-80 lg:w-96 px-5 md:px-6 lg:px-8 py-6 md:py-7 lg:py-8">
+                <div class="arrows">
+                    <i class="fas fa-arrow-left"></i>
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+                <i class="fas fa-map-marked-alt text-2xl md:text-3xl lg:text-4xl mb-3 md:mb-4"></i>
+                <h3 class="text-lg md:text-xl lg:text-2xl mb-2 md:mb-3">Destination Guide</h3>
+                <p class="text-xs md:text-sm lg:text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem non voluptas a itaque quidem, nesciunt amet consequatur veritatis quia aliquam.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats py-8 md:py-12 lg:py-16 px-4 md:px-6 lg:px-8">
+        <div class="stats-container flex flex-col lg:flex-row justify-center items-center gap-6 md:gap-8 lg:gap-10 max-w-6xl mx-auto">
+            <div class="stats-left w-full lg:w-1/2 h-48 md:h-64 lg:h-96">
+                <video src="images/001 Section Intro.mp4" class="w-full h-full object-cover rounded-lg" controls autoplay muted loop></video>
+            </div>
+            <div class="stats-right w-full lg:w-1/2 grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-5 lg:gap-6">
+                <div class="stat-box px-4 md:px-5 py-4 md:py-5">
+                    <i class="fas fa-users text-xl md:text-2xl lg:text-2xl mb-2 md:mb-3"></i>
+                    <span class="text-lg md:text-xl lg:text-2xl">200+</span>
+                    <p class="text-xs md:text-sm mt-1 md:mt-2">TEAM MEMBER</p>
+                </div>
+                <div class="stat-box px-4 md:px-5 py-4 md:py-5">
+                    <i class="fas fa-globe text-xl md:text-2xl lg:text-2xl mb-2 md:mb-3"></i>
+                    <span class="text-lg md:text-xl lg:text-2xl">900+</span>
+                    <p class="text-xs md:text-sm mt-1 md:mt-2">Client Reviews</p>
+                </div>
+                <div class="stat-box px-4 md:px-5 py-4 md:py-5">
+                    <i class="fas fa-star text-xl md:text-2xl lg:text-2xl mb-2 md:mb-3"></i>
+                    <span class="text-lg md:text-xl lg:text-2xl">10k+</span>
+                    <p class="text-xs md:text-sm mt-1 md:mt-2">Complete Project</p>
+                </div>
+                <div class="stat-box px-4 md:px-5 py-4 md:py-5">
+                    <i class="fas fa-award text-xl md:text-2xl lg:text-2xl mb-2 md:mb-3"></i>
+                    <span class="text-lg md:text-xl lg:text-2xl">20k+</span>
+                    <p class="text-xs md:text-sm mt-1 md:mt-2">Wining Award</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="company-name" class="flex flex-col md:flex-row flex-wrap justify-between items-center gap-3 md:gap-4 lg:gap-5 my-4 md:my-6 lg:my-8 mx-auto px-3 md:px-4 py-3 md:py-4 max-w-5xl">
+        <span class="w-full md:w-auto px-3 md:px-4 py-2 md:py-2.5 text-xs md:text-sm lg:text-base flex-1 md:flex-none"><i class="fas fa-chart-line"></i> Segment</span>
+        <span class="w-full md:w-auto px-3 md:px-4 py-2 md:py-2.5 text-xs md:text-sm lg:text-base flex-1 md:flex-none"><i class="fas fa-search"></i> Splunk</span>
+        <span class="w-full md:w-auto px-3 md:px-4 py-2 md:py-2.5 text-xs md:text-sm lg:text-base flex-1 md:flex-none"><i class="fas fa-users"></i> Hubspot</span>
+        <span class="w-full md:w-auto px-3 md:px-4 py-2 md:py-2.5 text-xs md:text-sm lg:text-base flex-1 md:flex-none"><i class="fas fa-tasks"></i> Asana</span>
+        <span class="w-full md:w-auto px-3 md:px-4 py-2 md:py-2.5 text-xs md:text-sm lg:text-base flex-1 md:flex-none"><i class="fas fa-tools"></i> Airtasker</span>
+    </div>
 </body>
 </html>
