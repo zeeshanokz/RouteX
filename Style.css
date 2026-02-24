@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -27,6 +31,13 @@
     cursor: pointer;
     transition: all 0.3s ease;
     font-weight: bold;
+}
+
+.navbar-list li a {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .navbar-list li:hover {
@@ -221,5 +232,29 @@ pre {
     align-items: center;
     justify-content: center;
     gap: 8px;
+}
+
+/* ==================== COACHING SECTION ==================== */
+
+.coaching {
+    background-color: #f9f9f9;
+}
+
+.coaching-card {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+}
+
+.coaching-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Coaching section custom styles */
+.coaching i {
+    color: #83CD20 !important;
+}
+
+.coaching .coaching-card:last-child button {
+    background-color: #034833 !important;
 }
 
